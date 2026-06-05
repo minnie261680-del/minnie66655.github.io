@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="แผนเทรดโอกาสชนะสูง - US Penny Stocks - 4 กลยุทธ์สำหรับ Scalper โดย MIN pitpibool">
+    <title>แผนเทรดโอกาสชนะสูง | MIN pitpibool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background particles -->
+    <div class="bg-particles" id="bgParticles"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-brand">
+            <div class="min-logo-mini">
+                <svg viewBox="0 0 200 40" width="160" height="32" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="minLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#18ffff"/>
+                            <stop offset="100%" style="stop-color:#448aff"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Small chart icon -->
+                    <rect x="2" y="4" width="32" height="32" rx="8" fill="none" stroke="url(#minLogoGrad)" stroke-width="2"/>
+                    <polyline points="8,26 14,18 20,22 26,12 28,10" fill="none" stroke="url(#minLogoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="28" cy="10" r="2.5" fill="#18ffff"/>
+                    <!-- Logo Text -->
+                    <text x="42" y="22" font-family="Inter, sans-serif" font-weight="900" font-size="20" fill="url(#minLogoGrad)" letter-spacing="1.5">MIN</text>
+                    <text x="42" y="33" font-family="Inter, sans-serif" font-weight="400" font-size="9.5" fill="#cbd5e1" letter-spacing="1">pitpibool</text>
+                </svg>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link active" data-section="hero">หน้าแรก</a>
+            <a href="#strategy1" class="nav-link" data-section="strategy1">กลยุทธ์ 1</a>
+            <a href="#strategy2" class="nav-link" data-section="strategy2">กลยุทธ์ 2</a>
+            <a href="#strategy3" class="nav-link" data-section="strategy3">กลยุทธ์ 3</a>
+            <a href="#strategy4" class="nav-link" data-section="strategy4">กลยุทธ์ 4</a>
+            <a href="#infographic" class="nav-link" data-section="infographic">สรุปรวม</a>
+        </div>
+        <button class="btn-export" id="btnExport" onclick="window.print()">
+            <span>📄</span> Export PDF
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-content">
+            <!-- MIN pitpibool Logo -->
+            <div class="min-logo-hero" style="margin-bottom: 2.5rem;">
+                <svg viewBox="0 0 320 90" width="320" height="90" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradHero" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#18ffff"/>
+                            <stop offset="50%" style="stop-color:#448aff"/>
+                            <stop offset="100%" style="stop-color:#e040fb"/>
+                        </linearGradient>
+                        <filter id="glowHero">
+                            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Icon: chart line inside rounded box -->
+                    <rect x="5" y="5" width="70" height="70" rx="18" fill="none" stroke="url(#logoGradHero)" stroke-width="3" filter="url(#glowHero)"/>
+                    <polyline points="20,55 32,38 42,44 54,24 62,18" fill="none" stroke="url(#logoGradHero)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowHero)"/>
+                    <circle cx="62" cy="18" r="4" fill="#18ffff" filter="url(#glowHero)"/>
+                    <!-- Text: MIN -->
+                    <text x="90" y="52" font-family="Inter, sans-serif" font-weight="900" font-size="52" fill="url(#logoGradHero)" filter="url(#glowHero)" letter-spacing="4">MIN</text>
+                    <!-- Text: pitpibool -->
+                    <text x="92" y="74" font-family="Inter, sans-serif" font-weight="500" font-size="19" fill="#cbd5e1" letter-spacing="3">pitpibool</text>
+                </svg>
+            </div>
+            <div class="hero-badge">US PENNY STOCKS • SCALPER TRADING</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">แผนเทรด</span>
+                <br>
+                <span class="glow-text">โอกาสชนะสูง</span>
+            </h1>
+            <p class="hero-subtitle">4 กลยุทธ์สำหรับเทรดหุ้น Penny Stock ตลาดอเมริกา</p>
+            <div class="hero-author">
+                <span class="author-label">สร้างโดย</span>
+                <span class="author-name">พิตรพิบูล คำซองเมือง</span>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">กลยุทธ์</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5m</div>
+                    <div class="stat-label">Timeframe</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">VP</div>
+                    <div class="stat-label">Volume Profile</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">L2</div>
+                    <div class="stat-label">Order Book</div>
+                </div>
+            </div>
+            <a href="#strategy1" class="hero-cta">
+                เริ่มดูกลยุทธ์ <span class="arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Strategy 1: Post-Spike Reversal -->
+    <section class="strategy-section" id="strategy1">
+        <div class="section-header">
+            <div class="strategy-number">01</div>
+            <h2 class="section-title">เข้าหลังหุ้น Spike แล้วร่วง</h2>
+            <p class="section-subtitle">After Hours 18:00+ | รอราคาร่วงแล้วเข้าที่ VAL เป้าหมาย POC</p>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart1" width="1100" height="550"></canvas>
+        </div>
+        <div class="strategy-details">
+            <div class="detail-card entry">
+                <div class="detail-icon">🎯</div>
+                <h3>จุดเข้าซื้อ</h3>
+                <p>เข้าที่ <strong>VAL</strong> (Value Area Low) จาก Volume Profile ช่วง After Hours ถึงเวลาล่าสุด</p>
+            </div>
+            <div class="detail-card target">
+                <div class="detail-icon">🏆</div>
+                <h3>เป้าหมาย</h3>
+                <p>หวังเอาราคา <strong>POC</strong> (Point of Control) ซึ่งเป็นราคาที่มี Volume สูงสุด</p>
+            </div>
+            <div class="detail-card tools">
+                <div class="detail-icon">🔧</div>
+                <h3>เครื่องมือ</h3>
+                <p>ดู <strong>Time & Sales</strong> และ Volume ควบคู่ไปด้วยตลอด</p>
+            </div>
+            <div class="detail-card condition">
+                <div class="detail-icon">⏰</div>
+                <h3>เงื่อนไข</h3>
+                <p>รอเทรดช่วง <strong>18:00+</strong> รอหุ้น Spike ไปแล้ว ราคาร่วงลงเยอะ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy 2: Below VWAP -->
+    <section class="strategy-section" id="strategy2">
+        <div class="section-header">
+            <div class="strategy-number">02</div>
+            <h2 class="section-title">หุ้น Spike แล้วหล่นใต้ VWAP</h2>
+            <p class="section-subtitle">ดู POC After Hours + Order Book L2 เช็ค Sell Wall</p>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart2" width="1100" height="550"></canvas>
+        </div>
+        <div class="strategy-details">
+            <div class="detail-card entry">
+                <div class="detail-icon">📊</div>
+                <h3>Volume Profile</h3>
+                <p>ขีดเส้น <strong>POC</strong> จาก After Hours จนถึงเวลาล่าสุดของวันปัจจุบัน</p>
+            </div>
+            <div class="detail-card target">
+                <div class="detail-icon">📕</div>
+                <h3>Order Book L2</h3>
+                <p>ดูราคาที่คนถือรอขายมากที่สุด อยู่<strong>เหนือราคาปัจจุบัน</strong>มากแค่ไหน</p>
+            </div>
+            <div class="detail-card tools">
+                <div class="detail-icon">🔻</div>
+                <h3>Sell Wall</h3>
+                <p>ถ้า Sell Wall อยู่ใกล้ = <strong>ระวัง</strong> | อยู่ไกล = <strong>มีโอกาสวิ่งขึ้น</strong></p>
+            </div>
+            <div class="detail-card condition">
+                <div class="detail-icon">📉</div>
+                <h3>เงื่อนไข</h3>
+                <p>หุ้นเคย Spike แล้วราคา<strong>หล่นลงมาใต้ VWAP</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy 3: Scalper Uptrend -->
+    <section class="strategy-section" id="strategy3">
+        <div class="section-header">
+            <div class="strategy-number">03</div>
+            <h2 class="section-title">Scalper เทรดหุ้นขาขึ้น</h2>
+            <p class="section-subtitle">ราคาเหนือ VWAP + เคย Spike + Volume สูง | เข้าเหนือ VAH ห้ามหลุด</p>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart3" width="1100" height="550"></canvas>
+        </div>
+        <div class="strategy-details">
+            <div class="detail-card entry">
+                <div class="detail-icon">🚀</div>
+                <h3>จุดเข้าซื้อ</h3>
+                <p>ราคาอยู่<strong>เหนือ VAH</strong> และไม่ห่างจาก POC มากเกินไป</p>
+            </div>
+            <div class="detail-card target">
+                <div class="detail-icon">🛑</div>
+                <h3>จุดตัดขาดทุน</h3>
+                <p>ราคา<strong>ห้ามหลุดแนว VAH</strong> ถ้าหลุด = ออกทันที!</p>
+            </div>
+            <div class="detail-card tools">
+                <div class="detail-icon">✅</div>
+                <h3>เช็คลิสต์</h3>
+                <p>✓ เทรนด์ขึ้น ✓ เหนือ VWAP ✓ เคย Spike ✓ Volume สูง</p>
+            </div>
+            <div class="detail-card condition">
+                <div class="detail-icon">📈</div>
+                <h3>เงื่อนไข</h3>
+                <p>เทรดเฉพาะหุ้น<strong>เทรนด์ขาขึ้น</strong> ราคายืนเหนือ VWAP เท่านั้น</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy 4: HALT Play -->
+    <section class="strategy-section" id="strategy4">
+        <div class="section-header">
+            <div class="strategy-number">04</div>
+            <h2 class="section-title">เทรดหลัง HALT</h2>
+            <p class="section-subtitle">รอ 5-10 นาที ยืนยันแล้วค่อยเข้า | ห้าม FOMO!</p>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart4" width="1100" height="550"></canvas>
+        </div>
+        <div class="strategy-details">
+            <div class="detail-card entry">
+                <div class="detail-icon">⏳</div>
+                <h3>ขั้นตอนที่ 1</h3>
+                <p>หลัง Halt รอราคา<strong>ยืนเหนือราคาปิดแท่งก่อนหน้า</strong> 5-10 นาที</p>
+            </div>
+            <div class="detail-card target">
+                <div class="detail-icon">📐</div>
+                <h3>ขั้นตอนที่ 2</h3>
+                <p>ขีด <strong>Volume Profile</strong> แท่งเทียน 5 นาทีที่ Halt พอดี</p>
+            </div>
+            <div class="detail-card tools">
+                <div class="detail-icon">💰</div>
+                <h3>ขั้นตอนที่ 3</h3>
+                <p>ซื้อตอนราคาถึง <strong>POC</strong> พร้อมดู Order Book L2 ว่าราคาบวกตลอดไหม</p>
+            </div>
+            <div class="detail-card condition">
+                <div class="detail-icon">⚠️</div>
+                <h3>คำเตือน</h3>
+                <p><strong>ห้าม FOMO!</strong> ต้องรอยืนยันก่อนเข้าเท่านั้น</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographic Summary -->
+    <section class="infographic-section" id="infographic">
+        <div class="infographic-header">
+            <h2 class="infographic-title">
+                <span class="gradient-text">สรุปแผนเทรดทั้งหมด</span>
+            </h2>
+            <p class="infographic-subtitle">US Penny Stocks • Scalper Trading Plan</p>
+        </div>
+        <div class="infographic-grid">
+            <!-- Strategy 1 Card -->
+            <div class="info-card card-1">
+                <div class="info-card-header">
+                    <span class="info-number">01</span>
+                    <span class="info-badge badge-afterhours">After Hours</span>
+                </div>
+                <h3 class="info-card-title">หลัง Spike ร่วง</h3>
+                <div class="info-mini-chart" id="miniChart1"></div>
+                <ul class="info-checklist">
+                    <li><span class="check">→</span> รอหุ้น Spike แล้วร่วง</li>
+                    <li><span class="check">→</span> เข้าที่ VAL → เป้า POC</li>
+                    <li><span class="check">→</span> ดู Time & Sales ควบคู่</li>
+                    <li><span class="check">→</span> ช่วง After Hours 18:00+</li>
+                </ul>
+                <div class="info-entry">
+                    <span class="entry-label">ENTRY</span> VAL
+                    <span class="target-label">TARGET</span> POC
+                </div>
+            </div>
+            <!-- Strategy 2 Card -->
+            <div class="info-card card-2">
+                <div class="info-card-header">
+                    <span class="info-number">02</span>
+                    <span class="info-badge badge-vwap">ใต้ VWAP</span>
+                </div>
+                <h3 class="info-card-title">Spike แล้วหล่นใต้ VWAP</h3>
+                <div class="info-mini-chart" id="miniChart2"></div>
+                <ul class="info-checklist">
+                    <li><span class="check">→</span> ดู POC After Hours ถึงปัจจุบัน</li>
+                    <li><span class="check">→</span> เช็ค Order Book L2</li>
+                    <li><span class="check">→</span> ดู Sell Wall ห่างแค่ไหน</li>
+                    <li><span class="check">→</span> ประเมินความเสี่ยง</li>
+                </ul>
+                <div class="info-entry">
+                    <span class="entry-label">ดู</span> POC + L2
+                    <span class="target-label">เช็ค</span> Sell Wall
+                </div>
+            </div>
+            <!-- Strategy 3 Card -->
+            <div class="info-card card-3">
+                <div class="info-card-header">
+                    <span class="info-number">03</span>
+                    <span class="info-badge badge-scalper">Scalper</span>
+                </div>
+                <h3 class="info-card-title">Scalper ขาขึ้น</h3>
+                <div class="info-mini-chart" id="miniChart3"></div>
+                <ul class="info-checklist">
+                    <li><span class="check">✓</span> เทรนด์ขึ้น + เหนือ VWAP</li>
+                    <li><span class="check">✓</span> เคย Spike + Volume สูง</li>
+                    <li><span class="check">→</span> เข้าเหนือ VAH ใกล้ POC</li>
+                    <li><span class="check">✗</span> ห้ามหลุด VAH</li>
+                </ul>
+                <div class="info-entry">
+                    <span class="entry-label">ENTRY</span> เหนือ VAH
+                    <span class="target-label">STOP</span> หลุด VAH
+                </div>
+            </div>
+            <!-- Strategy 4 Card -->
+            <div class="info-card card-4">
+                <div class="info-card-header">
+                    <span class="info-number">04</span>
+                    <span class="info-badge badge-halt">HALT</span>
+                </div>
+                <h3 class="info-card-title">เทรดหลัง HALT</h3>
+                <div class="info-mini-chart" id="miniChart4"></div>
+                <ul class="info-checklist">
+                    <li><span class="check">→</span> รอ 5-10 นาที ยืนเหนือแท่งก่อน</li>
+                    <li><span class="check">→</span> ขีด VP แท่ง 5 นาทีที่ Halt</li>
+                    <li><span class="check">→</span> ซื้อที่ POC + ดู L2</li>
+                    <li><span class="check">⚠</span> ห้าม FOMO!</li>
+                </ul>
+                <div class="info-entry">
+                    <span class="entry-label">ENTRY</span> POC (5m)
+                    <span class="target-label">WAIT</span> 5-10 min
+                </div>
+            </div>
+        </div>
+        <!-- Tools Banner -->
+        <div class="tools-banner">
+            <h3>🔧 เครื่องมือสำคัญ</h3>
+            <div class="tools-list">
+                <div class="tool-item">
+                    <span class="tool-icon">📊</span>
+                    <span>Volume Profile</span>
+                </div>
+                <div class="tool-item">
+                    <span class="tool-icon">〰️</span>
+                    <span>VWAP</span>
+                </div>
+                <div class="tool-item">
+                    <span class="tool-icon">📕</span>
+                    <span>Order Book L2</span>
+                </div>
+                <div class="tool-item">
+                    <span class="tool-icon">⏱️</span>
+                    <span>Time & Sales</span>
+                </div>
+                <div class="tool-item">
+                    <span class="tool-icon">🕯️</span>
+                    <span>Candlestick 5m</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-logo">
+            <svg viewBox="0 0 240 60" width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGradFoot" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#18ffff"/>
+                        <stop offset="100%" style="stop-color:#448aff"/>
+                    </linearGradient>
+                </defs>
+                <rect x="2" y="8" width="40" height="40" rx="10" fill="none" stroke="url(#logoGradFoot)" stroke-width="1.8"/>
+                <polyline points="10,36 18,24 26,29 34,17 38,13" fill="none" stroke="url(#logoGradFoot)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="38" cy="13" r="2.5" fill="#18ffff"/>
+                <text x="52" y="32" font-family="Inter, sans-serif" font-weight="900" font-size="28" fill="url(#logoGradFoot)" letter-spacing="2">MIN</text>
+                <text x="52" y="44" font-family="Inter, sans-serif" font-weight="400" font-size="11" fill="#a0a0c0" letter-spacing="1">pitpibool</text>
+            </svg>
+        </div>
+        <div class="footer-author">
+            <p class="author-credit">สร้างโดย <strong>พิตรพิบูล คำซองเมือง</strong></p>
+        </div>
+        <p>แผนเทรดโอกาสชนะสูง • US Penny Stocks • Scalper Trading Plan • MIN pitpibool</p>
+        <p class="disclaimer">⚠️ การลงทุนมีความเสี่ยง ผู้ลงทุนควรศึกษาข้อมูลก่อนตัดสินใจลงทุน</p>
+    </footer>
+
+    <script src="charts.js"></script>
+</body>
+</html>
